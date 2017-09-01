@@ -1,4 +1,10 @@
 var Faye = require('faye');
+var https = require('https');
+
+// To bind a port on heroku 
+https.createServer(function (request, response) {
+  console.log("listening on port "+(process.env.PORT || 5000));
+}).listen(process.env.PORT || 5000);
 
 var token   = "db187b9812d0c977966a0919e90ce3d3724f532e";
 var roomId  = "59a695bcd73408ce4f739399";
