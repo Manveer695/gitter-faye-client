@@ -4,7 +4,7 @@
   "description": "Node example client for the Gitter Faye API",
   "main": "faye-client.js",
   "scripts": {
-    "start": "node faye-client.js"
+    "start": "node gitter-faye.js"
   },
   "author": "@malditogeek",
   "license": "BSD-2-Clause",
