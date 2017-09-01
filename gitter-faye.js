@@ -64,4 +64,4 @@ var messageHandler = function(msg) {
 };
 
 
-client.subscribe('/api/v1/user/59a695bcd73408ce4f739399', messageHandler, {});
+client.subscribe('/api/v1/user/59a69552d73408ce4f739389', messageHandler, {});
