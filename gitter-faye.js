@@ -1,7 +1,7 @@
 var Faye = require('faye');
 
-var token   = process.env.TOKEN;
-var roomId  = process.env.ROOM_ID;
+var token   = "db187b9812d0c977966a0919e90ce3d3724f532e";
+var roomId  = "59a695bcd73408ce4f739399";
 
 // Authentication extension
 
@@ -58,7 +58,4 @@ var messageHandler = function(msg) {
 };
 
 
-client.subscribe('/api/v1/rooms/' + roomId,                   messageHandler, {});
-client.subscribe('/api/v1/rooms/' + roomId + '/chatMessages', messageHandler, {});
-client.subscribe('/api/v1/rooms/' + roomId + '/users',        messageHandler, {});
-client.subscribe('/api/v1/rooms/' + roomId + '/events',       messageHandler, {});
+client.subscribe('/api/v1/user/59a695bcd73408ce4f739399', messageHandler, {});
